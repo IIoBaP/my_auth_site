@@ -4,7 +4,7 @@ const cookieParser = require("cookie-parser");
 const path = require("path");
 
 const app = express();
-const port = 3000;
+const port = 80;
 
 const users = [
     {
@@ -16,6 +16,11 @@ const users = [
         id: 2,
         login: "user",
         password: "user",
+    },
+    {
+        id: 3,
+        login: "Danil",
+        password: "111",
     }
 ];
 
@@ -75,6 +80,6 @@ app.get("/auth", (req, res) => {
     res.status(200).sendFile("second.html", options);
 });
 
-app.listen(port, () => {
-    console.log(`Сервер запущен на http://localhost:${port}`);
-});
+app.listen(port, '0.0.0.0', () => {
+    console.log(`Сервер запущен на http://Auth.ru`);
+  });

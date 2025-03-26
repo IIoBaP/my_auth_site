@@ -12,16 +12,29 @@
             <h2>Авторизация</h2>
             <form action="/auth" method="GET">
                 <label for="login">Логин</label>
-                <input type="text" id="login" name="login" value="Ivanov">
-
+                <input type="text" id="login" name="login" value="Ivanov" placeholder="Введите логин">
+    
                 <label for="password">Пароль</label>
                 <div class="password">
                     <input type="password" id="password-input" placeholder="Введите пароль" name="password" value="123456">
                     <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
                 </div>
-
-                <button type="submit" id="vcod">Войти</button>
+                
+                <div class="buttons-container">
+                    <button type="submit" id="vcod">Войти</button>
+                </div>
             </form>
+            
+            <div class="telegram-auth">
+                <script 
+                    async 
+                    src="https://telegram.org/js/telegram-widget.js?22" 
+                    data-telegram-login="My_authDan_bot"  
+                    data-size="large" 
+                    data-auth-url="http://auth.ru/auth/telegram" 
+                    data-request-access="write"
+                ></script>
+            </div>
         </div>
     </div>
     <script src="/js/script.js" defer></script>

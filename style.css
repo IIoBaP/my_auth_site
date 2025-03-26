@@ -41,37 +41,38 @@ input {
 }
 
 .password {
-	margin: 15px auto;
+    margin: 15px auto;
     position: relative;
 }
 
 #password-input {
-	width: 100%;
-	padding: 5px 0;
-	height: 30px;
-	line-height: 40px;
-	text-indent: 10px;
-	margin: 0 0 15px 0;
-	border-radius: 5px;
-	border: 1px solid #999;
-	font-size: 18px;
-}
-.password-control {
-	position: absolute;
-	top: 11px;
-	right: 6px;
-	display: inline-block;
-	width: 15px;
-	height: 15px;
-	background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
-}
-.password-control.view {
-	background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
+    width: 100%;
+    padding: 5px 0;
+    height: 30px;
+    line-height: 40px;
+    text-indent: 10px;
+    margin: 0 0 15px 0;
+    border-radius: 5px;
+    border: 1px solid #999;
+    font-size: 18px;
 }
 
-button {
+.password-control {
+    position: absolute;
+    top: 11px;
+    right: 6px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
+}
+
+.password-control.view {
+    background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
+}
+
+button#vcod {
     width: 100%;
-    margin-top: 20px;
     padding: 10px;
     background: #4c5c8a;
     color: white;
@@ -79,8 +80,39 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    margin: 20px 0 10px 0; 
 }
 
-button:hover {
+button#vcod:hover {
     background: #3b4a72;
+}
+
+button.danil-auth {
+    width: 100%;
+    padding: 10px;
+    background: #0088cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+    transition: background 0.3s;
+}
+
+button.danil-auth:hover {
+    background: #0077b5; 
+}
+
+.telegram-auth {
+    margin-top: 15px; 
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid #eee; 
+}
+
+.telegram-auth p {
+    margin: 10px 0;
+    color: #666;
+    font-size: 14px;
 }
